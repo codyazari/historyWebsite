@@ -1,3 +1,8 @@
 .green {
     color: darkgreen;
 }
+
+nav {
+    display: inline-block;
+    float: right;
+}
