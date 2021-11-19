@@ -1,5 +1,4 @@
 <!doctype html>
-<html lang="en">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -100,28 +99,41 @@
     write a parent class, each with children that inherit characteristics from the parent, but also have their own
     attributes and functions. To go back to the calculator, we can build a general class that handles calculations,
     and subsequently make mathematical operations (children classes) that inherit the same data types from its
-    calculation class (it's parent).
+    calculation class (it's parent). So, we have a Calculation parent which can be thought of as a blank equation with
+    only an equal sign to be filled in with the user's calculation. Then we have addition, subtraction, multiplication,
+    and division as it's children (which is subsequently the user filling in what mathematical operation will take place),
+    all of which ultimately give a result to the user after the program is run.
   </p>
 
   <h3 class="lead">Polymorphism</h3>
   <p>
     Now we find ourselves at polymorphism. Polymorphism, from its Greek roots, means <i>many shapes</i>. Now, you may
-    ask, how does this relate to programming?
+    ask, how does this relate to programming? Well, often in programming, some methods will have similar structures,
+    even with similar methods (functions within classes). You may ask, how does the program differentiate between these
+    methods with the same names, and still respond with the correct information? This is polymorphism at work! When a
+    program is run, the interpreter (what reads, understands, and responds to your code) actually can determine which
+    class, method, and lines of code to run just from the code itself! So to see polymorphism in a realtime example, I'll
+    refer back to the calculator. In the example for inheritance, that can ultimately be considered polymorphism as well!
+    Since the Calculation class is running multiple instances of itself with different mathematical operations, the
+    computer should have a hard time differentiating which results to return, right? Nope! Polymorphism lets the
+    computer determine which operations to return based on its children classes.
   </p>
-  <!-- LAST PARAGRAPH
+
+  <h3 class="lead">Abstraction</h3>
   <p>
-    Now you may ask, why adhere to these 4 principles? Why can't I just write code however I please, instead of writing
-    my program to fit into these weird constraints and parameters? The answer lies in the benefits it provides. Some
-    benefits are written below:
+    And now last but certainly not least, we stumble upon abstraction. Abstraction is another way for a programmer to
+    increase the security of the program they are writing. To start, lets think of a phone. We use it on almost an hourly
+    basis, surfing the web, listening to music, writing emails, etc. However, we don't necessarily know how the phone works.
+    We are unsure of how the hardware powering the device works, nor do we know how the software was built, yet we use it
+    still. This, at its heart, is abstraction. Abstraction is providing the user of the program or device functionality
+    over it, but does not allow the average person to accidentally alter the things that power it in any meaningful way.
+    To refer back to the calculator example, it would be quite a hassle if we were to give an average person the raw
+    code to the calculator. Not only would they not know how to get meaningful use out of the calculator(because of
+    their lack of knowledge of coding), they would also have a high chance of altering the raw code and crashing the
+    calculator completely. So instead, we design a graphical interface for the calculator, with all the numbers and
+    functions of the calculator, increasing the usability of the calculator and decreasing the likelihood of the program
+    breaking.
   </p>
-  <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-  -->
 </div>
 
 <!-- Optional JavaScript; choose one of the two! -->
