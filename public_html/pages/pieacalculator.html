@@ -35,6 +35,17 @@
             <li><a class="dropdown-item" href="dotcombubble.html">Dot Com Bubble</a></li>
           </ul>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Object-Oriented Programming
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="tipsandtricks.html">Beginner Tips and Tricks</a></li>
+            <li><a class="dropdown-item" href="aaatesting.html">AAA Testing</a></li>
+            <li><a class="dropdown-item" href="pieacalculator.html">OOP Core Concepts</a></li>
+            <li><a class="dropdown-item" href="separationofconcerns.html">Separation of Concerns</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
@@ -71,12 +82,10 @@
     programming language can be thought of as a template which contains information that can be replicated any number
     of times. This in itself is a powerful tool, because it allows a programmer to only write one block of code and
     continuously use it and the information inside it. The usage of the class creates an object, or an <i>instance</i>
-    of the class. To illustrate, below is the code for a Calculator class. In it, it contains the information to add
-    numbers and, when called, will produce an instance of the calculator class.
+    of the class. To illustrate, below is the code for an addition class. In it, it contains the information to add
+    numbers and, when called, will produce an instance of the addition class, also known as an object.
   </p>
-
-  <iframe src="https://trinket.io/embed/python/92db7207a8" width="100%" height="356" allowfullscreen></iframe>
-
+  <img src="../statics/class.PNG" class="rounded mx-auto d-block">
   <h3 class="lead">Encapsulation</h3>
   <p>
     This leads into one of the core principles of OOP, encapsulation. Encapsulation is the natural division of labor
@@ -87,8 +96,10 @@
     their own data. When data or information is needed, it will call data from another class using a method. This has
     the added benefit of being more secure, because a classes data or "state" cannot be access and changed, intentionally
     or unintentionally. This can be seen above in a program for a calculator. Instead of having one function wholly in-
-    charge of all mathematical functions, we can split each function up with regard to its mathematical operation.
+    charge of all mathematical functions, we can split each function up with regard to its mathematical operation. This
+    concept can be seen below, where one method is in charge of addition. (See @staticmethod add_number)
   </p>
+  <img src="../statics/encapsulation.PNG" class="rounded mx-auto d-block">
 
   <h3 class="lead">Inheritance</h3>
   <p>
@@ -102,9 +113,14 @@
     calculation class (it's parent). So, we have a Calculation parent which can be thought of as a blank equation with
     only an equal sign to be filled in with the user's calculation. Then we have addition, subtraction, multiplication,
     and division as it's children (which is subsequently the user filling in what mathematical operation will take place),
-    all of which ultimately give a result to the user after the program is run.
+    all of which ultimately give a result to the user after the program is run. Below, we can see a parent class <i>Calculation</i>,
+    which essentially builds the template for all other mathematical functions to follow. It's child class <i>Addition</i>
+    can be seen above.
   </p>
-
+  <div class="form-inline">
+    <a title="Pronesto, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Subclasses.png"><img width="256" alt="Subclasses" src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Subclasses.png" class="rounded mx-auto"></a>
+    <img src="../statics/calculation.PNG" class="rounded mx-auto">
+  </div>
   <h3 class="lead">Polymorphism</h3>
   <p>
     Now we find ourselves at polymorphism. Polymorphism, from its Greek roots, means <i>many shapes</i>. Now, you may
@@ -134,6 +150,7 @@
     functions of the calculator, increasing the usability of the calculator and decreasing the likelihood of the program
     breaking.
   </p>
+  <a title="Johannes Maximilian, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:IPhone_6_display_removed_1.jpg"><img width="512" alt="IPhone 6 display removed 1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/IPhone_6_display_removed_1.jpg/512px-IPhone_6_display_removed_1.jpg" class="rounded mx-auto d-block"></a>
 </div>
 
 <!-- Optional JavaScript; choose one of the two! -->
@@ -151,6 +168,7 @@
     <!-- Grid container -->
     <div class="container p-4">Thank You For Visiting Our Website!</div>
     <div>https://validator.w3.org/</div>
+    <img src="../statics/w3c_home_nb.png">
     <div>© 2021 Cody Azari</div>
   </footer>
 </div>
