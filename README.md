@@ -1,3 +1,3 @@
 This is my project website for IS601.
 
-[OOP Basics](oopbasics.eastus.azurecontainer.io)
+[OOP Website](oopwebsite.eastus.azurecontainer.io)
